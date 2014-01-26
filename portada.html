@@ -1,0 +1,29 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="STYLESHEET" type="text/css" href="vista_tabla_clubes.css"/>
+    </head>
+    <body>
+        <div id="principal"></div>
+        <? php
+        //Crear conexión
+        $con = mysqli_connect("localhost", "root", "root", "d1_gasbiumi");
+        mysqli_close($con);
+        // Comprobar la conexión
+        if (mysqli_connect_errno ($ con))
+        {
+        echo "No se pudo conectar a MySQL: " . mysqli_connect_error ();
+        }
+        $queEmp = "SELECT * FROM empresa ORDER BY nombre ASC";
+        $resEmp = mysql_query($queEmp, $conexion) or die(mysql_error());
+        $totEmp = mysql_num_rows($resEmp);
+        }
+        ?>
+    </body>
+</html>

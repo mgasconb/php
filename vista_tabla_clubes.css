@@ -1,0 +1,49 @@
+/* 
+    Document   : vista_tabla_clubes
+    Created on : 24-jul-2013, 14:02:43
+    Author     : Miguel
+    Description:
+        Purpose of the stylesheet follows.
+*/
+*{
+    height:100%;
+    width:100%;
+}
+
+body { 
+    background:none repeat scroll 0 0 #2E9AFE;
+}
+
+h3{
+    height:10%;
+}
+
+#caja_principal{
+    width: 80%;
+    float:left;
+    height: 10%;
+    padding-left: 5%;
+}
+
+.fila_0{
+    background:none repeat scroll 0 0 #56B0FF;
+}
+
+.fila_1{
+    background:none repeat scroll 0 0 #0086FC;
+}
+
+#caja_principal div {
+    height: 60%;
+    margin-bottom: 0.2%;
+}
+
+#caja_principal div div{
+    width: 19%;
+    height:100%;
+    float:left;
+    margin-right:0.2%;
+    display: table-cell;
+    text-align: center;
+    vertical-align:middle; 
+}
